@@ -1,9 +1,9 @@
-pipeline {
+pipeline {test
     agent any
 
     stages {
         stage('Checkout') {
-            steps {
+            steps {ddd
                 // Checkout the code from your Git repository
                 git 'https://github.com/omprakashcode/test.deploy.git'
             }
