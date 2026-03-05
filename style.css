@@ -41,6 +41,28 @@ body {
     cursor: pointer;
 }
 
+/* Navigation */
+.main-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+}
+
+.main-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
 /* Styling for section div1 */
 #div1 {
     background-color: #007bff; /* Blue background */
