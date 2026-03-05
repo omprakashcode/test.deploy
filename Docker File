@@ -1,5 +1,13 @@
-# Use the official Nginx base image
-FROM nginx:latest
+# Use the official Node.js LTS image
+FROM node:20-alpine
 
-# Copy your HTML and CSS files to the default Nginx web root
-COPY . /usr/share/nginx/html
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install --production
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["node", "server.js"]
